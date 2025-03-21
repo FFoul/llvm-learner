@@ -1,3 +1,6 @@
 [submodule "c-fft"]
 	path = c-fft
 	url = https://github.com/FFoul/c-fft.git
+[submodule "Ç-Thread-Pool"]
+	path = Ç-Thread-Pool
+	url = https://github.com/FFoul/C-Thread-Pool.git
