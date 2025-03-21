@@ -1,12 +1,13 @@
 //=============================================================================
 // FILE:
-//      input_for_hello.c
+//      input_for_if.c
 //
 // DESCRIPTION:
-//      Sample input file for HelloWorld, Add2Sub and InjectFuncCall
+//      Sample input file for Mod100
 //
 // License: MIT
 //=============================================================================
+#include <stdio.h>
 int foo(int a) {
   return a * 2;
 }
@@ -26,6 +27,7 @@ int main(int argc, char *argv[]) {
   ret += foo(a);
   ret += bar(a, ret);
   ret += fez(a, ret, 123);
-
-  return ret;
+  printf("ret = %d\n", ret);
+  return 0;
 }
+  

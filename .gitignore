@@ -33,6 +33,10 @@
 
 # Build directories
 */build/*
+build/*
 
 # LLVM files
 outputs/*
+
+# Vscode file
+.vscode/*

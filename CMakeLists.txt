@@ -52,8 +52,8 @@ list(APPEND CMAKE_PREFIX_PATH "${LT_LLVM_INSTALL_DIR}/lib/cmake/llvm/")
 find_package(LLVM CONFIG)
 
 # We defer the version checking to this statement
-if("${LLVM_VERSION_MAJOR}" VERSION_LESS 19)
-  message(FATAL_ERROR "Found LLVM ${LLVM_VERSION_MAJOR}, but need LLVM 19 or above")
+if("${LLVM_VERSION_MAJOR}" VERSION_LESS 16)
+  message(FATAL_ERROR "Found LLVM ${LLVM_VERSION_MAJOR}, but need LLVM 16 or above")
 endif()
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
@@ -114,3 +114,6 @@ add_subdirectory(lib)
 add_subdirectory(tools)
 add_subdirectory(test)
 add_subdirectory(HelloWorld)
+add_subdirectory(Add2Sub)
+add_subdirectory(Mod100)
+add_subdirectory(AddFunction)

@@ -44,7 +44,7 @@ void visitor(Function &F) {
                     llvm::Value *LHS = BO->getOperand(0);
                     llvm::Value *RHS = BO->getOperand(1);
                     IRBuilder<> Builder(BO);
-                    Value *Sub = Builder.CreateSub(LHS, RHS);
+                    Value *Sub = Builder.CreateSub(LHS, RHS, "sub");
                     // Copy flags
                     if(BO->hasNoSignedWrap())
                         cast<BinaryOperator>(Sub)->setHasNoSignedWrap(true);
