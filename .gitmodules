@@ -1,0 +1,3 @@
+[submodule "c-fft"]
+	path = c-fft
+	url = https://github.com/FFoul/c-fft.git
